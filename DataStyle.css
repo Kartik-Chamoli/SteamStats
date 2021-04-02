@@ -1,0 +1,189 @@
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+  }
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: linear-gradient(to right, #1a2980, #26d0ce);
+}
+
+.progress {
+	background-color: rgb(81, 181, 199);
+}
+
+.progress-bar:nth-child(1n) {
+	background-color: #ADFF2F;
+	color:rgb(0, 0, 0);
+	font-weight: bold;
+}
+
+.prog-label img{
+	margin-bottom: 8px;
+}
+
+#id-head{
+	font-family: 'Dosis', sans-serif;
+	letter-spacing: 2px;
+	font-size: 45px;
+	text-align: center;
+	padding: 10px;
+	color: rgb(255, 255, 255);
+	text-shadow: 2px 4px 3px rgb(0, 0, 0);
+}
+
+#user-profile{
+	display: flex;
+	justify-content: center;
+
+}
+#user-profile > img{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	border:3px solid rgb(60, 255, 0);
+	box-shadow: 1px 2px 12px rgb(255, 0, 0);
+}
+
+.usr-details{
+	background-image: url('ASSETS/seamless-gamepad-pattern-vector_8531-60.jpg');
+	height: 250px;
+	margin-bottom: 0px;
+}
+
+.section-heading{
+	background-color: rgb(255, 187, 0);
+	font-family: Verdana;
+	color:white;
+	letter-spacing: 10px;
+	font-size:50px;
+}
+
+.section-icons{
+	width:60px;
+	height:60px;
+	padding-right:2px;
+	margin-top: -10px;
+}
+
+hr {
+	display: block;
+    border: 0;
+    border-top: 3px solid rgb(255, 255, 255);
+    margin: -6px 0;
+	padding: 0;
+}
+
+#game-gallery{
+	padding-top:4px;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(to right, #ff8008, #ffc837);
+}
+
+#game-gallery img{
+	width: 320px;
+	height: 180px;
+	margin:5px;
+	transition: transform .3s ease-out;
+}
+
+#game-gallery figcaption{
+	max-width:320px;
+	text-align: center;
+	color:rgb(255, 255, 255);
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+#game-gallery img:hover{
+	transform: scale(1.5); 
+	border:5px solid white;
+}
+
+.time-played{
+	background: linear-gradient(to right, #7474bf, #348ac7);
+}
+
+.prog-label{
+	color:rgb(39, 7, 23);
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 14px;
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#friend-gallery{
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(to right, #1d976c, #93f9b9);
+	margin-top: -10px;
+	justify-content: center;
+	position: relative;
+}
+
+#friend-gallery img{
+	width: 200px;
+	height: 200px;
+	margin:5px;
+	border-radius: 50%;
+}
+
+#friend-gallery figcaption{
+	text-align: center;
+	color:rgb(71, 20, 71);
+    font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+#friend-gallery figure{
+	position: relative;
+}
+#friend-gallery .compBtn{
+  box-shadow: 1px 6px 6px 5px rgba(0,0,0,0.98);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 15px;
+  display: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 800;
+  position:absolute;
+  left:15%;
+  top:30%;
+  cursor: pointer;
+}
+
+/* #friend-gallery .compBtn:hover{
+	box-shadow: 1px 6px 6px 5px rgba(0,0,0,0.98);
+} */
+
+
+#friend-gallery img:hover{
+	height: 250px;
+	width: 250px;
+	border:3px solid rgb(255, 216, 41);
+
+}
+
+#friend-gallery img:hover + .compBtn, .compBtn:hover{
+	display: inline-block;
+	background-color: rgb(76, 116, 175); /* Green */
+
+
+}
+
